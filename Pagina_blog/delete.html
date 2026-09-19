@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Artículo | Mi Blog</title>
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+
+    <header>
+        <h1>Eliminar Artículo</h1>
+        <p>Ingresa el ID del documento que deseas remover de MongoDB</p>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <form id="formEliminar" class="tarjeta-eliminar">
+            
+            <div class="alerta-peligro">
+                <p>Esta acción no se puede deshacer. El artículo será eliminado permanentemente de la base de datos.</p>
+            </div>
+
+            <!-- Campo: ID del documento -->
+            <div class="campo-grupo">
+                <label for="id">ID del Artículo (MongoDB _id)</label>
+                <input 
+                    type="text" 
+                    id="id" 
+                    name="id" 
+                    placeholder="Ej. 66e3c8f1a2b3c4d5e6f7a8b9" 
+                    required
+                >
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="botones-grupo">
+                <button type="submit" class="btn btn-eliminar">Confirmar Eliminación</button>
+                <a href="index.html" class="btn btn-cancelar">Cancelar</a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="delete.js"></script>
+</body>
+</html>

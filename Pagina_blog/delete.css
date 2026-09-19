@@ -1,0 +1,45 @@
+/*Estilos para la Confirmación y Eliminación de Artículos*/
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+   .tarjeta-eliminar {
+    background-color: #1e293b;
+    border: 1px solid #ef4444; /* Borde rojo de advertencia */
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Caja de mensaje de advertencia */
+.alerta-peligro {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.icono-alerta {
+    font-size: 1.5rem;
+}
+
+.alerta-peligro p {
+    color: #fca5a5;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Resaltado del input al enfocarlo en la vista eliminar */
+.tarjeta-eliminar .campo-grupo input[type="text"]:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}

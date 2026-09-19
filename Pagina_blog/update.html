@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Artículo | Mi Blog</title>
+    <link rel="stylesheet" href="update.css">
+</head>
+<body>
+
+    <header>
+        <h1>Actualizar Artículo</h1>
+        <p>Modifica el título o contenido de una publicación existente por su ID</p>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <form id="formEditar" class="tarjeta-actualizar">
+            
+            <!-- Campo: ID del artículo a actualizar -->
+            <div class="campo-grupo">
+                <label for="id">ID del Artículo (MongoDB _id)</label>
+                <input 
+                    type="text" 
+                    id="id" 
+                    name="id" 
+                    placeholder="Ej. 66e3c8f1a2b3c4d5e6f7a8b9" 
+                    required
+                >
+            </div>
+
+            <!-- Campo: Nuevo Título -->
+            <div class="campo-grupo">
+                <label for="titulo">Nuevo Título</label>
+                <input 
+                    type="text" 
+                    id="titulo" 
+                    name="titulo" 
+                    placeholder="Ingresa el título actualizado" 
+                    required
+                >
+            </div>
+
+            <!-- Campo: Nuevo Contenido -->
+            <div class="campo-grupo">
+                <label for="contenido">Nuevo Contenido</label>
+                <textarea 
+                    id="contenido" 
+                    name="contenido" 
+                    rows="6" 
+                    placeholder="Escribe el nuevo cuerpo del artículo..." 
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="botones-grupo">
+                <button type="submit" class="btn btn-actualizar">Guardar Cambios</button>
+                <a href="index.html" class="btn btn-cancelar">Cancelar</a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="update.js"></script>
+</body>
+</html>

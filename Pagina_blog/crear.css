@@ -1,0 +1,121 @@
+/* ==========================================================================
+   5. Formulario de Creación de Artículos y Subida de Imágenes
+   ========================================================================== */
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+   .tarjeta-formulario {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campo-grupo label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+/* Formato de Inputs y Textarea */
+.campo-grupo input[type="text"],
+.campo-grupo textarea {
+    width: 100%;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    resize: vertical;
+}
+
+.campo-grupo input[type="text"]:focus,
+.campo-grupo textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+}
+
+.campo-grupo input::placeholder,
+.campo-grupo textarea::placeholder {
+    color: #64748b;
+}
+
+/* Área para subir imágenes */
+.zona-imagen {
+    position: relative;
+    border: 2px dashed #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #0f172a;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.zona-imagen:hover {
+    border-color: #a855f7;
+    background-color: rgba(168, 85, 247, 0.05);
+}
+
+.input-archivo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contenido-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    pointer-events: none;
+}
+
+.icono-subir {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.texto-subir {
+    color: #f1f5f9;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.extensiones-subir {
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+/* Botón de cancelación */
+.btn-cancelar {
+    background-color: #334155;
+    color: #f8fafc;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cancelar:hover {
+    background-color: #475569;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nuevo Artículo | Mi Blog</title>
+    <link rel="stylesheet" href="crear.css">
+</head>
+<body>
+
+    <header>
+        <h1>Crear Nuevo Artículo</h1>
+        <p>Ingresa la información para guardar en la base de datos de MongoDB</p>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <form id="formAgregar" class="tarjeta-formulario">
+            
+            <!-- Campo: Título del Artículo -->
+            <div class="campo-grupo">
+                <label for="titulo">Título del Artículo</label>
+                <input 
+                    type="text" 
+                    id="titulo" 
+                    name="titulo" 
+                    placeholder="Ej. Introducción a Node.js y MongoDB" 
+                    required
+                >
+            </div>
+
+            <!-- Campo: Contenido -->
+            <div class="campo-grupo">
+                <label for="contenido">Contenido</label>
+                <textarea 
+                    id="contenido" 
+                    name="contenido" 
+                    rows="6" 
+                    placeholder="Escribe el cuerpo del artículo aquí..." 
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Apartado: Opción para Subir Imagen -->
+            <div class="campo-grupo">
+                <label>Imagen Destacada (Opcional)</label>
+                <div class="zona-imagen" id="zona-drop">
+                    <input type="file" id="imagen" name="imagen" accept="image/*" class="input-archivo">
+                    <div class="contenido-drop">
+                        <p class="texto-subir">Haz clic para seleccionar o arrastra una imagen</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="botones-grupo">
+                <button type="submit" class="btn btn-crear">Guardar Artículo</button>
+                <a href="index.html" class="btn btn-cancelar">Cancelar</a>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="crear.js"></script>
+</body>
+</html>

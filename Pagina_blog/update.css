@@ -1,0 +1,24 @@
+/*7. Estilos para la Edición y Actualización de Artículos*/
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+   .tarjeta-actualizar {
+    background-color: #1e293b;
+    border: 1px solid #f59e0b; /* Borde ámbar para actualización */
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Enfoque visual de los inputs en el formulario de actualización */
+.tarjeta-actualizar .campo-grupo input[type="text"]:focus,
+.tarjeta-actualizar .campo-grupo textarea:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
